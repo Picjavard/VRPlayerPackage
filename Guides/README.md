@@ -22,6 +22,8 @@ EMPTY
 
 Открыть настройки проекта `Edit -> Project Settings`. Перейти на `XR Plugin Management`. Установить плагин, нажав на кнопку `Install XR Plugin Management`. Поставить флажок напротив `Open XR`.
 
+
+
 Появляется окно с предложением перейти на новую систему Input ('NO'). Чтобы исправить ошибку, необходимо перейти в раздел `Player` и изменить параметр `Active Input Handling` на `Both` (новая система нужна для работы со шлемом, а старая для симуляции с клавиатуры). Принять презагрузку `Editor`.
 
 После перезагрузки пройти `Edit -> Project Settings -> XR Plugin Management -> Open XR` и создать новый профайл взаимодействия, выбрав в `Interaction Profiles` `Oculus Touch Controller Profile` и/или `HTC Vive Controller Profile`
@@ -70,3 +72,17 @@ Please refer to the [installation] guide to install this package.
 
 [Installation]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity/blob/master/Documentation/HowToGuides/Installation/README.md
 [ссылка]: https://assetstore.unity.com/packages/tools/utilities/vrtk-v4-tilia-package-importer-214936
+
+
+![Step 3](assets/images/_3_ProjectSettings.png)
+![Step 3](assets/images/_4_InstalXR.png)
+![Step 3](assets/images/_5_InputSystem.png)
+![Step 3](assets/images/_6_OpenXR.png)
+![Step 3](assets/images/_7_InterractionProfile.png)
+![Step 3](assets/images/_8_TiliaDownload.png)
+![Step 3](assets/images/_8_TiliaImport.png)
+![Step 3](assets/images/_8_UpgPackManager.png)
+![Step 3](assets/images/_9_AddScoped.png)
+![Step 3](assets/images/_9_AddSelected.png)
+![Step 3](assets/images/_9_PImporter.png)
+![Step 3](assets/images/_10_Play.png)
