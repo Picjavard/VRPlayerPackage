@@ -13,7 +13,7 @@ EMPTY
 
 ### Шаг 2
 
-Импортируйте в проект `VR Player Package`. 
+Импортируйте в проект `VR Player Package`. --> [VRPlayerPackage]
 
 ![Step 2](assets/images/_2_Импорт.png)
 
@@ -95,6 +95,6 @@ Please refer to the [installation] guide to install this package.
 	
 [Installation]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity/blob/master/Documentation/HowToGuides/Installation/README.md
 [ссылка]: https://assetstore.unity.com/packages/tools/utilities/vrtk-v4-tilia-package-importer-214936
-
+[VRPlayerPackage]: https://github.com/Picjavard/VRPlayerPacket/tree/main/Guides/assets/VRPlayerPackagePrefab/
 
 
