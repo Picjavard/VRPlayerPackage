@@ -11,7 +11,7 @@ EMPTY
 
 ![Step 1](assets/images/_1_Создание_проекта.png)
 
-Создайте новый примитивный объект `Cube` выбрав `Main Menu -> GameObject -> 3D Object -> Cube` и измените параметры компонента Transform:
+Создайте новый примитивный объект `Cube` выбрав `Main Menu -> GameObject -> 3D Object -> Cube` и измените параметры компонента `Transform`:
 
 * Position: `X = 0, Y = -0.5, Z = 0`
 * Scale: `X = 3, Y = 1, Z = 3`
@@ -30,6 +30,9 @@ EMPTY
 ![Step 2](assets/images/_2_VRPP2.png)
 ![Step 2](assets/images/_2_Импорт.png)
 
+Переместите на сцену префаб `Player`
+
+![Step 2](assets/images/_2_Player.png)
 
 ### Шаг 3
 
