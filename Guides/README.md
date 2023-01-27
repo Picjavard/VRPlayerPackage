@@ -22,14 +22,16 @@ EMPTY
 
 Открыть настройки проекта `Edit -> Project Settings`. Перейти на `XR Plugin Management`. Установить плагин, нажав на кнопку `Install XR Plugin Management`. Поставить флажок напротив `Open XR`.
 
-![Step 3](assets/images/_3_ProjectSettings.png)
-![Step 3](assets/images/_4_InstalXR.png)
-![Step 3](assets/images/_5_InputSystem.png)
+![Step 3](assets/images/_3_ProjectSettings.png) ![Step 3](assets/images/_4_InstalXR.png)
 ![Step 3](assets/images/_6_OpenXR.png)
 
-Появляется окно с предложением перейти на новую систему Input ('NO'). Чтобы исправить ошибку, необходимо перейти в раздел `Player` и изменить параметр `Active Input Handling` на `Both` (новая система нужна для работы со шлемом, а старая для симуляции с клавиатуры). Принять презагрузку `Editor`.
+Появляется окно с предложением перейти на новую систему Input, выберите 'NO', после чего в консоли отобразится ошибка. Чтобы исправить ошибку, необходимо перейти в раздел `Player` и изменить параметр `Active Input Handling` на `Both` (новая система нужна для работы со шлемом, а старая для симуляции с клавиатуры). Принять презагрузку `Editor`.
+
+![Step 3](assets/images/_5_InputSystem.png)
 
 После перезагрузки пройти `Edit -> Project Settings -> XR Plugin Management -> Open XR` и создать новый профайл взаимодействия, выбрав в `Interaction Profiles` `Oculus Touch Controller Profile` и/или `HTC Vive Controller Profile`
+
+![Step 3](assets/images/_7_InterractionProfile.png)
 
 ### Шаг 4
 
