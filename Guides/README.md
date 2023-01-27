@@ -73,20 +73,12 @@ VRPP содержит уже настроенный префаб игрока с
 
 ![Step 4](assets/images/_8_UpgPackManager.png)
 
-```diff
-- <details>
-<summary>
-
-[Устарело!] 
-</summary>
+<details><summary>[Устарело!]</summary>
 
 Please refer to the [installation] guide to install this package.
 Скачать .NET 4.x https://www.microsoft.com/ru-RU/download/details.aspx?id=17718
 
 </details>
-```
-
-
 
 ### Шаг 5
 
