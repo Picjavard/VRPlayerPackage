@@ -13,8 +13,9 @@ EMPTY
 
 ### Шаг 2
 
-Импортируйте в проект `VR Player Package`. --> [VRPlayerPackage]
-
+Скачайте и импортируйте в проект пакет `VR Player Package`. --> [VRPlayerPackage]
+![Step 2](assets/images/_2_VRPP.png)
+![Step 2](assets/images/_2_VRPP2.png)
 ![Step 2](assets/images/_2_Импорт.png)
 
 
