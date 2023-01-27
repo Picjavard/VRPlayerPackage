@@ -1,7 +1,17 @@
 # VR Player Package (Установка)
 
+> * Reading Time: 10 minutes
+>
+> * Checked with: Unity 2021.3.9f1
+
 ## Introduction
-EMPTY
+
+VR Player Package основан на тулките VRTK v4.
+
+Данный гайд посвящен быстрой настройке проекта для запуска на VR-шлеме (Oculus Quest 1/2 или HTC Vive).
+
+VRPP содержит уже настроенный префаб игрока с 3D-симуляцией, плавным передвижением и системой захватом предметов.
+
 
 ## Let's Start
 
@@ -24,7 +34,7 @@ EMPTY
 
 Скачайте и импортируйте в проект пакет `VR Player Package`. 
 
---> [VRPlayerPackage]
+--> [VRPlayerPackage] <--
 
 ![Step 2](assets/images/_2_VRPP.png)
 ![Step 2](assets/images/_2_VRPP2.png)
