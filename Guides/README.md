@@ -9,7 +9,7 @@ EMPTY
 
 Создайте новый проект в Unity. Используйте шаблон `3D Core`.
 
-![Step 1](assets/images/_1_Создание_проекта.png)
+![Step 1](assets/images/_1_Создание проекта.png)
 
 ### Шаг 2
 
