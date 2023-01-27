@@ -22,7 +22,8 @@ EMPTY
 
 Открыть настройки проекта `Edit -> Project Settings`. Перейти на `XR Plugin Management`. Установить плагин, нажав на кнопку `Install XR Plugin Management`. Поставить флажок напротив `Open XR`.
 
-![Step 3](assets/images/_3_ProjectSettings.png) ![Step 3](assets/images/_4_InstalXR.png)
+![Step 3](assets/images/_3_ProjectSettings.png) 
+![Step 3](assets/images/_4_InstalXR.png)
 ![Step 3](assets/images/_6_OpenXR.png)
 
 Появляется окно с предложением перейти на новую систему Input, выберите 'NO', после чего в консоли отобразится ошибка. Чтобы исправить ошибку, необходимо перейти в раздел `Player` и изменить параметр `Active Input Handling` на `Both` (новая система нужна для работы со шлемом, а старая для симуляции с клавиатуры). Принять презагрузку `Editor`.
@@ -35,8 +36,14 @@ EMPTY
 
 ### Шаг 4
 
-Скачайте и импортируйте из Asset Store пакет `VRTK v4 Tilia Package Importer`. [ссылка]
+Скачайте и импортируйте из Asset Store пакет `VRTK v4 Tilia Package Importer`. ---> [ссылка]
+
+![Step 4](assets/images/_8_TiliaDownload.png)
+![Step 4](assets/images/_8_TiliaImport.png)
+
 В диалоговом окне нажать `Install/Upgrade`.
+
+![Step 4](assets/images/_8_UpgPackManager.png)
 
 <details>
 <summary>[-Устарело!-]</summary>
@@ -48,7 +55,12 @@ Please refer to the [installation] guide to install this package.
 
 ### Шаг 5
 
-Откройте `Windows -> Tilia -> Package Importer` и нажмите на кнопку `Add Scoped Registry`. Поставьте флажки напротив следующих пакетов:
+Откройте `Windows -> Tilia -> Package Importer` и нажмите на кнопку `Add Scoped Registry`. 
+
+![Step 5](assets/images/_9_PImporter.png)
+![Step 5](assets/images/_9_AddScoped.png)
+
+Поставьте флажки напротив следующих пакетов:
 
 * `Tilia.CameraRigs.SpatialSimulator.Unity`
 * `Tilia.CameraRigs.TrackedAlias.Unity`
@@ -67,6 +79,8 @@ Please refer to the [installation] guide to install this package.
 
 Нажмите на кнопку `Add Selected Packages`.
 
+![Step 5](assets/images/_9_AddSelected.png)
+
 В окне `Manage Unity InputManager Axis Definition` нажмите на кнопку `Add Input Definitions`.
 
 ## Готово
@@ -79,15 +93,5 @@ Please refer to the [installation] guide to install this package.
 [ссылка]: https://assetstore.unity.com/packages/tools/utilities/vrtk-v4-tilia-package-importer-214936
 
 
-![Step 3](assets/images/_3_ProjectSettings.png)
-![Step 3](assets/images/_4_InstalXR.png)
-![Step 3](assets/images/_5_InputSystem.png)
-![Step 3](assets/images/_6_OpenXR.png)
-![Step 3](assets/images/_7_InterractionProfile.png)
-![Step 3](assets/images/_8_TiliaDownload.png)
-![Step 3](assets/images/_8_TiliaImport.png)
-![Step 3](assets/images/_8_UpgPackManager.png)
-![Step 3](assets/images/_9_AddScoped.png)
-![Step 3](assets/images/_9_AddSelected.png)
-![Step 3](assets/images/_9_PImporter.png)
+
 ![Step 3](assets/images/_10_Play.png)
