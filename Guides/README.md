@@ -23,10 +23,10 @@ VRPP содержит уже настроенный префаб игрока с
 
 Создайте новый примитивный объект `Cube` выбрав `Main Menu -> GameObject -> 3D Object -> Cube` и измените параметры компонента `Transform`:
 
-* Position: `X = 0, Y = -0.5, Z = 0`
-* Scale: `X = 3, Y = 1, Z = 3`
+> * Position: `X = 0, Y = -0.5, Z = 0`
+> * Scale: `X = 3, Y = 1, Z = 3`
 
-Переименуйте `Cube` на `Floor`.
+Переименуйте `Cube`	`rgb(9, 105, 218)`на `Floor`.
 
 ![Step 1](assets/images/_1_floor.png)
 
@@ -34,7 +34,7 @@ VRPP содержит уже настроенный префаб игрока с
 
 Скачайте и импортируйте в проект пакет `VR Player Package`. 
 
---> [VRPlayerPackage] <--
+---> [VRPlayerPackage] <---
 
 ![Step 2](assets/images/_2_VRPP.png)
 ![Step 2](assets/images/_2_VRPP2.png)
@@ -62,7 +62,9 @@ VRPP содержит уже настроенный префаб игрока с
 
 ### Шаг 4
 
-Скачайте и импортируйте из Asset Store пакет `VRTK v4 Tilia Package Importer`. ---> [ссылка]
+Скачайте и импортируйте из Asset Store пакет `VRTK v4 Tilia Package Importer`. 
+
+---> [ссылка] <---
 
 ![Step 4](assets/images/_8_TiliaDownload.png)
 ![Step 4](assets/images/_8_TiliaImport.png)
