@@ -40,11 +40,15 @@
 </details>
 
 <details><summary>	:red_circle: Mesh Collider :red_circle:</summary><p>
+  
   ## Inst
+  
   Если у объекта имеется `Mesh Collider`, то убедитесь, что активен параметр `Convex` :ballot_box_with_check:.
+  
   ![Step 1](assets/images/_01_Mesh.png)
-  </p>
-  </details>
+
+</p>
+</details>
 
 <details>
   <summary>	:red_circle: Если объект состоит из нескольких объектов :red_circle:</summary>
