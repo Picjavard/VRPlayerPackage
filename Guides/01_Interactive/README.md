@@ -27,13 +27,24 @@
 
 ![Step 1](assets/images/_01_Collider.png)
 
-<details>
-  <summary>	:red_circle: Mesh Collider :red_circle:</summary>
+<details><summary>CLICK ME</summary>
+<p>
+
+#### We can hide anything, even code!
+
+```ruby
+   puts "Hello World"
+```
+
+</p>
+</details>
+
+<details><summary>	:red_circle: Mesh Collider :red_circle:</summary><p>
   ## Inst
   Если у объекта имеется `Mesh Collider`, то убедитесь, что активен параметр `Convex` :ballot_box_with_check:.
   ![Step 1](assets/images/_01_Mesh.png)
-  
-</details>
+  </p>
+  </details>
 
 <details>
   <summary>	:red_circle: Если объект состоит из нескольких объектов :red_circle:</summary>
