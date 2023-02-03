@@ -13,6 +13,9 @@
 ### Шаг 1
 
 Создайте/добавьте объект на сцену, с которым хотите взаимодействовать, например `Cube`. Измените его размер через параметр `Scale` на `0.2`. Переместите его на возвышенное место (стол).
-[Step 1](assets/_01_CreateCube.png)
-[Step 1](assets/_01_ScaleCubee.png)
-[Step 1](assets/_01_MoveCube.png)
+
+[Step 1](assets/images/_01_CreateCube.png)
+
+[Step 1](assets/images/_01_ScaleCubee.png)
+
+[Step 1](assets/images/_01_MoveCube.png)
