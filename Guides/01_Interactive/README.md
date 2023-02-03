@@ -23,7 +23,7 @@
 ### Шаг 2
 
 Убедитесь, что у объекта есть коллайдер (`Box`, `Sphere`, `Cylinder` или `Mesh Collider`). 
-Если он отсутствует у объекта, то добавьте новый компонент `Box Collider`. Для этого нажмите на кнопу `Add Component` в самом внизу окна `Inspector`. В поисковом поле введите `Box Collider` и выберите его из выпадающего списка ниже.
+Если он отсутствует у объекта, то добавьте новый компонент `Box Collider`. Для этого нажмите на кнопку `Add Component` в самом внизу окна `Inspector`. В поисковом поле введите `Box Collider` и выберите его из выпадающего списка ниже.
 
 ![Step 1](assets/images/_01_Collider.png)
 
@@ -39,4 +39,19 @@
   Если у объекта имеются дочерние объекты, то нужно добавить на *каждый* объект с компонентом `Mesh Renderer` компонент `Mesh Collider`.
   
 ![Step 1](assets/images/_01_MeshRend.png)
+</details>
+
+### Шаг 3
+
+Откройте `Window -> Tilia -> Interactions -> Interactable Creator`. Данный инструмент автоматически преобразует объект в интерактивный, добавляя необходимые скрипты/объекты/компоненты.
+Выберите объект `Cube` и нажмите на кнопку `Convert To Interactable`
+![Step 1](assets/images/_01_IntCreator.png)
+![Step 1](assets/images/_01_Convert.png)
+
+<details>
+  <summary>	:orange_circle: Обратите внимание! :orange_circle:</summary>
+  Вы увидите, что объект сменил название на `Interactions.Interactable_XXXX`, но на самом деле это новый родительский объект. 
+  Ваш объект теперь находится в `Interactions.Interactable_XXXX -> MeshContainer`. В контейнере Internal находятся все внутренние объекты и скрипты, которые не требуются изменять в дальнейшем. 
+  
+![Step 1](assets/images/_01_Inter.png)
 </details>
