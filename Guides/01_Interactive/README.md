@@ -19,3 +19,23 @@
 ![Step 1](assets/images/_01_ScaleCubee.png)
 
 ![Step 1](assets/images/_01_MoveCube.png)
+
+### Шаг 2
+
+Убедитесь что у объекта есть коллайдер (Box, Sphere, Cylinder, Mesh). 
+Если он отсутствует у объекта, то добавьте новый компонент `Box Collider`
+
+<details>
+  <summary>! Mesh Collider !</summary>
+  Если у объекта имеется `Mesh Collider`, то убедитесь, что активен параметр `Convex`.
+  
+![Step 1](assets/images/_01_Mesh.png)
+</details>
+<details>
+  <summary>! Объект состоит из нескольких объектов !</summary>
+  Если у объекта имеются дочерние объекты, то нужно добавить на каждый объект с компонентом `Mesh Renderer` компонент `Mesh Collider`.
+  
+![Step 1](assets/images/_01_.png)
+</details>
+
+![Step 1](assets/images/_01_Mesh.png)
