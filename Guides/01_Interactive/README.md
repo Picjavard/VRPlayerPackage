@@ -29,18 +29,18 @@
 
 <details>
   <summary>	:red_circle: Mesh Collider :red_circle:</summary>
-  <p>
+  <pre>
   Если у объекта имеется `Mesh Collider`, то убедитесь, что активен параметр `Convex` :ballot_box_with_check:.
   ![Step 1](assets/images/_01_Mesh.png)
-  </p>
+  </pre>
 </details>
 
 <details>
   <summary>	:red_circle: Если объект состоит из нескольких объектов :red_circle:</summary>
-  <p>
+  <pre>
   Если у объекта имеются дочерние объекты, то нужно добавить на *каждый* объект с компонентом `Mesh Renderer` компонент `Mesh Collider`.
   ![Step 1](assets/images/_01_MeshRend.png)
-  </p>
+  </pre>
 </details>
 
 ### Шаг 3
@@ -52,9 +52,12 @@
 
 <details>
   <summary>	:orange_circle: Обратите внимание! :orange_circle:</summary>
+  <pre>
   <p>
   Вы увидите, что объект сменил название на `Interactions.Interactable_XXXX`, но на самом деле это новый родительский объект. 
   Ваш объект теперь находится в `Interactions.Interactable_XXXX -> MeshContainer`. В контейнере Internal находятся все внутренние объекты и скрипты, которые не требуются изменять в дальнейшем. 
-  ![Step 1](assets/images/_01_Inter.png)
+  
   </p>
+  </pre>
+  ![Step 1](assets/images/_01_Inter.png)
 </details>
