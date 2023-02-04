@@ -63,7 +63,7 @@
 
 ### Шаг 4
 
-Выберите объект `Interactable_XXXX`. 
+Выберите объект `Interactions.Interactable_XXXX`. 
 Измените параметр `Primary Action` на `Interactable.GrabAction.Follow` и `Secondary Action` на `Interactable.GrabAction.Swap`.
 
 ![Step 4](assets/images/_01_PrimaryAction1.png)
