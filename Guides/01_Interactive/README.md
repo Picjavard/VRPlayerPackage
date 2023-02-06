@@ -52,14 +52,13 @@
 
 ![Step 3](assets/images/_01_Convert.png)
 
-<details>  <summary>	:orange_circle: Обратите внимание! :orange_circle:</summary><p>
+:orange_circle: Обратите внимание! :orange_circle:
 
-  Вы увидите, что объект сменил название на `Interactions.Interactable_XXXX`, но на самом деле это новый родительский объект. 
-  Ваш объект теперь находится в `Interactions.Interactable_XXXX -> MeshContainer`. В контейнере Internal находятся все внутренние объекты и скрипты, которые не требуются изменять в дальнейшем. 
+Вы увидите, что объект сменил название на `Interactions.Interactable_XXXX`, но на самом деле это новый родительский объект. 
+Ваш объект теперь находится в `Interactions.Interactable_XXXX -> MeshContainer`. В контейнере Internal находятся все внутренние объекты и скрипты, которые не требуются изменять в дальнейшем. 
   
-  ![Step 3](assets/images/_01_Inter.png)
+![Step 3](assets/images/_01_Inter.png)
   
-</p></details>
 
 ### Шаг 4
 
