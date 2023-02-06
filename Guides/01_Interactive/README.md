@@ -73,11 +73,24 @@
 
   Параметры ниже изменяют способы захвата объектов.
   
-  * Grab type
-	* Hold Till Release
-	* Toggle
+  * Grab type - тип захвата
+	* Hold Till Release - зажать триггер для удержания объекта
+	* Toggle - нажать триггер для захвата, повторно нажать - отпустить объект
+  * Follow Tracking - поведение захваченного объекта
+	* Follow Transform - объект следует за позицией руки мгновенно, проходит сквозь другие объекты
+	* Follow Rigidbody - объект следует за rigidbody руки, не проходит сквозь объекты, имеет инерцию
+  * Grab Offset - Точка захвата
+	* None - объект телепортируется в руку и удерживается за центр (Attach Point)
+	* Precision Point - захват объекта происходит за точку касания рукой этого объекта
+  * Second Action - поведение при захвате второй рукой уже(!) захваченного другой рукой объекта
+	* None 
+	* 
   
   ![Step 4](assets/images/_01_grabtype.png)
+  ![Step 4](assets/images/_01_followtracking.png)
+  ![Step 4](assets/images/_01_graboffset.png)
+  ![Step 4](assets/images/_01_secaction.png)
+  ![Step 4](assets/images/_01_velmulti.png)
   
 </p></details>
 
