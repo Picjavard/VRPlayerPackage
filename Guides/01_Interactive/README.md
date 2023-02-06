@@ -72,10 +72,10 @@
 <details><summary>	:green_circle: Дополнительно :green_circle:</summary><p>
 
   Параметры ниже изменяют способы захвата объектов.
-	
-	* Grab type
-		* Hold Till Release
-		* Toggle
+  
+  * Grab type
+	* Hold Till Release
+	* Toggle
   
   ![Step 4](assets/images/_01_grabtype.png)
   
