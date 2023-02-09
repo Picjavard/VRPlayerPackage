@@ -24,7 +24,7 @@
 В объекте `DoorExample` создайте `Cube` (`Main Menu -> GameObject -> 3D Object -> Cube`). 
 Измените параметры компонента `Transform`:
 
-	- Scale: `X = 0.8, Y = 1.8, Z = 0.1`
+  - Scale: `X = 0.8, Y = 1.8, Z = 0.1`
 	
 Переименуйте в `Door`.
 
@@ -36,21 +36,18 @@
 
 Cube:
 
-	- Position: `X = 0.5, Y = 1, Z = 0`
-	
-	- Scale: `X = 0.2, Y = 2, Z = 0.2`
+  - Position: `X = 0.5, Y = 1, Z = 0`
+  - Scale: `X = 0.2, Y = 2, Z = 0.2`
 
 Cube (1):
 
-	- Position: `X = -0.5, Y = 1, Z = 0`
-	
-	- Scale: `X = 0.2, Y = 2, Z = 0.2`
+  - Position: `X = -0.5, Y = 1, Z = 0`
+  - Scale: `X = 0.2, Y = 2, Z = 0.2`
 
 Cube (2):
 
-	- Position: `X = 0, Y = 2, Z = 0`
-	
-	- Scale: `X = 1, Y = 0.2, Z = 0.2`
+  - Position: `X = 0, Y = 2, Z = 0`
+  - Scale: `X = 1, Y = 0.2, Z = 0.2`
 
 
 Убедитесь в правильности структуры получившегося сложного объекта, сравнив с результатом на скриншоте:
@@ -65,21 +62,32 @@ Cube (2):
 Данный инструмент автоматически преобразует объект в один из видов контролируемых объектов, добавляя необходимые скрипты/объекты/компоненты.
 Существует четыре типа:
 	
-	- `Linear Joint Drive`
-	
-	- `Linear Transform Drive`
-	
-	- `Angular Joint Drive`
-	
-	- `Angular Transform Drive`
+  - `Linear Joint Drive` - ?
+  - `Linear Transform Drive` - ?
+  - `Angular Joint Drive` - ?
+  - `Angular Transform Drive` - ?
 	
 Выберите тип `Angular Transform Drive`.
 
 Выберите объект `Door` и нажмите на кнопку `Convert To Interactable`.
 
+![Step 3](assets/images/_02_HierarchyFacade.png)
+
 ### Шаг 4
 
 Измените параметры у компонента `Angular Drive Facade` объекта `Interactions.AngularTransformDrive_Door`
+
+![Step 4](assets/images/_02_AngDriveFacade.png)
+
+<details><summary>	:green_circle: Дополнительно :green_circle:</summary><p>
+
+  Параметры ниже изменяют поведение контролируемого объекта.
+  
+  * `?` - ?
+	* `?` - ?
+	* `?` - ?
+  
+</p></details>
 
 ## Готово
 
