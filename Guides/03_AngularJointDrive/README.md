@@ -17,44 +17,65 @@
 Для создания крышки сундука нам потребуется создать/загрузить модель крышки сундука. 
 Чтобы крышка не висела в воздухе - также потребуется модель нижней части сундука.
 
-Создайте пустой объект (`Main Menu -> GameObject -> Create Empty`) и переименуйте в `DoorExample`. 
+Создайте пустой объект (`Main Menu -> GameObject -> Create Empty`) и переименуйте в `ChestExample`. 
 
 ### Шаг 2
 
-В объекте `DoorExample` создайте `Cube` (`Main Menu -> GameObject -> 3D Object -> Cube`). 
+В объекте `ChestExample` создайте `Cube` (`Main Menu -> GameObject -> 3D Object -> Cube`). 
 Измените параметры компонента `Transform`:
 
-  - Scale: `X = 0.8, Y = 1.8, Z = 0.1`
+  - Position: `X = 0, Y = 1, Z = 0`
+  - Scale: `X = 1, Y = 0.05, Z = 0.5`
 	
-Переименуйте в `Door`.
+Переименуйте в `CapChest`. Это крышка сундука.
 
 ### Шаг 3
 
-В объекте `DoorExample` создайте пустой объект и переименуйте в `DoorFrame`.
+В объекте `ChestExample` создайте пустой объект и переименуйте в `ChestFrame`. Это остальная часть сундука.
 
-В объекте `DoorFrame` разместите три `Cube` и измените им следующие параметры: 
+В объекте `ChestFrame` разместите пять `Cube` и измените им следующие параметры: 
 
 Cube:
 
-  - Position: `X = 0.5, Y = 1, Z = 0`
-  - Scale: `X = 0.2, Y = 2, Z = 0.2`
+  - Position: `X = 0, Y = 0, Z = 0`
+  - Scale: `X = 1, Y = 0.05, Z = 0.5`
+
+Смените имя объекта на `Bottom`
 
 Cube (1):
 
-  - Position: `X = -0.5, Y = 1, Z = 0`
-  - Scale: `X = 0.2, Y = 2, Z = 0.2`
+  - Position: `X = 0.5, Y = 0.5, Z = 0`
+  - Scale: `X = 0.05, Y = 1, Z = 0.5`
+ 
+Смените имя объекта на `Right`
 
 Cube (2):
 
-  - Position: `X = 0, Y = 2, Z = 0`
-  - Scale: `X = 1, Y = 0.2, Z = 0.2`
+  - Position: `X = -0.5, Y = 0.5, Z = 0`
+  - Scale: `X = 0.05, Y = 1, Z = 0.5`
+ 
+Смените имя объекта на `Left`
+  
+Cube (3):
+
+  - Position: `X = 0, Y = 0.5, Z = -0.25`
+  - Scale: `X = 1, Y = 1, Z = 0.05`
+ 
+Смените имя объекта на `Front`
+
+Cube (4):
+
+  - Position: `X = 0, Y = 0.5, Z = 0.25`
+  - Scale: `X = 1, Y = 1, Z = 0.05`
+ 
+Смените имя объекта на `Back`
 
 
 Убедитесь в правильности структуры получившегося сложного объекта, сравнив с результатом на скриншоте:
 
-![Step 2](assets/images/_02_Hierarchy.png)
+![Step 2](assets/images/_03_Hierarchy.png)
 
-![Step 2](assets/images/_02_Door.png)
+![Step 2](assets/images/_03_Chest.png)
 
 ### Шаг 3
 
@@ -67,15 +88,15 @@ Cube (2):
   - `Angular Joint Drive` - Вращательное движение объекта вокруг оси. Использует физичеcкое взаимодействие Rigidbody.
   - `Angular Transform Drive` - Вращательное движение объекта вокруг оси. Kinematic.
 	
-Выберите тип `Angular Transform Drive`.
+Выберите тип `Angular Joint Drive`.
 
-Выберите объект `Door` и нажмите на кнопку `Convert To Interactable`.
+Выберите объект `CapChest` и нажмите на кнопку `Convert`.
 
 ![Step 3](assets/images/_02_HierarchyFacade.png)
 
 ### Шаг 4
 
-Измените параметры у компонента `Angular Drive Facade` объекта `Interactions.AngularTransformDrive_Door`
+Измените параметры у компонента `Angular Drive Facade` объекта `Interactions.AngularJointDrive_CapChest`
 
 ![Step 4](assets/images/_02_AngDriveFacade.png)
 
@@ -97,12 +118,25 @@ Cube (2):
 >  * `Gizmo Line Distance` - Ось поворота отображается линией в редакторе. Длина оси.
 >  * `Gizmo Sphere Radius` - Размер сфер на концах оси.
 
+### Шаг 5
+
+Получившийся объект имеет одну проблему. 
+Так как он может физически взаимодействовать с другими объектами, то крышка взаимодействует с остальным сундуком и не может повернуться.
+
+Чтобы решить отключить взаимодействие коллайдеров крышки и сундука, необходимо использовать готовый объект `CollisionIgnorer`.
+
+Создайте объект `Main Menu -> GameObject -> Tilia -> Prefabs -> Mutators -> Mutators.CollisionIgnorer`.
+
+В параметры перенесите объекты `ChestFrame` и `Interactions.AngularJointDrive_CapChest`.
+
+![Step 5](assets/images/_02_AngDriveFacade.png)
+
 ## Готово
 
 Нажмите на `Play`.
-Переместите контроллер к двери так, чтобы ее коснуться. 
+Переместите контроллер к крышке сундука так, чтобы ее коснуться. 
 Зажмите `ЛКМ` (`Left_Trigger`), чтобы схватить объект левым контроллером, `ПКМ` (`Right_Trigger`) - правым. 
-Не отпуская клавишу, отведите контроллер в сторону. Дверь открылась!
+Не отпуская клавишу, отведите контроллер в сторону. Сундук открылся!
 
 
 

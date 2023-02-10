@@ -69,7 +69,7 @@ Cube (2):
 	
 Выберите тип `Angular Transform Drive`.
 
-Выберите объект `Door` и нажмите на кнопку `Convert To Interactable`.
+Выберите объект `Door` и нажмите на кнопку `Convert`.
 
 ![Step 3](assets/images/_02_HierarchyFacade.png)
 
