@@ -80,6 +80,9 @@ Cube (4):
 ### Шаг 3
 
 Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
+
+![Step 3](assets/images/_03_Controllable.png)
+
 Данный инструмент автоматически преобразует объект в один из видов контролируемых объектов, добавляя необходимые скрипты/объекты/компоненты.
 Существует четыре типа:
 	
@@ -92,13 +95,15 @@ Cube (4):
 
 Выберите объект `CapChest` и нажмите на кнопку `Convert`.
 
-![Step 3](assets/images/_02_HierarchyFacade.png)
+![Step 3](assets/images/_03_Convert.png)
+
+![Step 3](assets/images/_03_HierarchyFacade.png)
 
 ### Шаг 4
 
 Измените параметры у компонента `Angular Drive Facade` объекта `Interactions.AngularJointDrive_CapChest`
 
-![Step 4](assets/images/_02_AngDriveFacade.png)
+![Step 4](assets/images/_03_AngDriveFacade.png)
 
 >  Параметры ниже изменяют поведение контролируемого объекта.
 >  
@@ -129,7 +134,8 @@ Cube (4):
 
 В параметры перенесите объекты `ChestFrame` и `Interactions.AngularJointDrive_CapChest`.
 
-![Step 5](assets/images/_02_AngDriveFacade.png)
+![Step 5](assets/images/_03_Mutators.png)
+![Step 5](assets/images/_03_Collision.png)
 
 ## Готово
 
@@ -138,5 +144,4 @@ Cube (4):
 Зажмите `ЛКМ` (`Left_Trigger`), чтобы схватить объект левым контроллером, `ПКМ` (`Right_Trigger`) - правым. 
 Не отпуская клавишу, отведите контроллер в сторону. Сундук открылся!
 
-
-
+![Step 5](assets/images/Chest.gif)

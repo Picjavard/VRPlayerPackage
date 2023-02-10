@@ -59,6 +59,9 @@ Cube (2):
 ### Шаг 3
 
 Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
+
+![Step 3](assets/images/_02_Controllable.png)
+
 Данный инструмент автоматически преобразует объект в один из видов контролируемых объектов, добавляя необходимые скрипты/объекты/компоненты.
 Существует четыре типа:
 	
@@ -70,6 +73,8 @@ Cube (2):
 Выберите тип `Angular Transform Drive`.
 
 Выберите объект `Door` и нажмите на кнопку `Convert`.
+
+![Step 3](assets/images/_02_Convert.png)
 
 ![Step 3](assets/images/_02_HierarchyFacade.png)
 
@@ -104,5 +109,4 @@ Cube (2):
 Зажмите `ЛКМ` (`Left_Trigger`), чтобы схватить объект левым контроллером, `ПКМ` (`Right_Trigger`) - правым. 
 Не отпуская клавишу, отведите контроллер в сторону. Дверь открылась!
 
-
-
+![Step 3](assets/images/Door.gif)
