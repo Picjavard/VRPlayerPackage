@@ -128,9 +128,8 @@
 
 Повторите те же действия для `MaximumReached`, но поставьте флажок ☑.
 
-![Step 5](assets/images/_04_MinActionAdd.png)
+![Step 5](assets/images/_04_MaxAction.png)
 
-![Step 5](assets/images/_03_Collision.png)
 
 ## Готово
 
