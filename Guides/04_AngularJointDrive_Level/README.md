@@ -59,7 +59,7 @@
 
 Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
 
-![Step 4](assets/images/_03_Controllable.png)
+![Step 4](assets/images/_04_AngDriveFacade_Controllable.png)
 
 > Данный инструмент автоматически преобразует объект в один из видов контролируемых объектов, добавляя необходимые скрипты/объекты/компоненты.
 > Существует четыре типа:
@@ -113,14 +113,22 @@
 Выберите объект `AngularJointDrive_Handle`, в компоненте `AngularJointDrive` нажмите на кнопку `Show Minimum Value Reached Action`.
 Выберите подсветившийся объект `MinimumReached`.
 
+![Step 5](assets/images/_04_MinAction.png)
+
 Раскройте событие `Activated (Boolean)` и нажмите на `+`. 
 Сюда небходимо добавлять события, которые должны выполняться, по достижению рукоятки минимального положения.
 
 Перенесите объект `TestCube` в поле None (Object). Выберите исполняющую функцию `GameObject -> SetActive(Bool)`. Флажок оставьте пустым ☐. 
 
+![Step 5](assets/images/_04_MinActionAdd.png)
+
+![Step 5](assets/images/_04_MinActionAddA.png)
+
+![Step 5](assets/images/_04_MinActionAddA-.png)
+
 Повторите те же действия для `MaximumReached`, но поставьте флажок ☑.
 
-![Step 5](assets/images/_04_Mutators.png)
+![Step 5](assets/images/_04_MinActionAdd.png)
 
 ![Step 5](assets/images/_03_Collision.png)
 
