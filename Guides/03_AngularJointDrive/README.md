@@ -77,7 +77,7 @@ Cube (4):
 
 ![Step 2](assets/images/_03_Chest.png)
 
-### Шаг 3
+### Шаг 4
 
 Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
 
@@ -99,7 +99,7 @@ Cube (4):
 
 ![Step 3](assets/images/_03_HierarchyFacade.png)
 
-### Шаг 4
+### Шаг 5
 
 Измените параметры у компонента `Angular Drive Facade` объекта `Interactions.AngularJointDrive_CapChest`
 
@@ -123,7 +123,7 @@ Cube (4):
 >  * `Gizmo Line Distance` - Ось поворота отображается линией в редакторе. Длина оси.
 >  * `Gizmo Sphere Radius` - Размер сфер на концах оси.
 
-### Шаг 5
+### Шаг 6
 
 Получившийся объект имеет одну проблему. 
 Так как он может физически взаимодействовать с другими объектами, то крышка взаимодействует с остальным сундуком и не может повернуться.

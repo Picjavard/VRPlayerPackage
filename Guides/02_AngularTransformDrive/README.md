@@ -52,15 +52,15 @@ Cube (2):
 
 Убедитесь в правильности структуры получившегося сложного объекта, сравнив с результатом на скриншоте:
 
-![Step 2](assets/images/_02_Hierarchy.png)
+![Step 3](assets/images/_02_Hierarchy.png)
 
-![Step 2](assets/images/_02_Door.png)
+![Step 3](assets/images/_02_Door.png)
 
-### Шаг 3
+### Шаг 4
 
 Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
 
-![Step 3](assets/images/_02_Controllable.png)
+![Step 4](assets/images/_02_Controllable.png)
 
 > Данный инструмент автоматически преобразует объект в один из видов контролируемых объектов, добавляя необходимые скрипты/объекты/компоненты.
 > Существует четыре типа:
@@ -74,15 +74,15 @@ Cube (2):
 
 Выберите объект `Door` и нажмите на кнопку `Convert`.
 
-![Step 3](assets/images/_02_Convert.png)
+![Step 4](assets/images/_02_Convert.png)
 
-![Step 3](assets/images/_02_HierarchyFacade.png)
+![Step 4](assets/images/_02_HierarchyFacade.png)
 
-### Шаг 4
+### Шаг 5
 
 Измените параметры у компонента `Angular Drive Facade` объекта `Interactions.AngularTransformDrive_Door`
 
-![Step 4](assets/images/_02_AngDriveFacade.png)
+![Step 5](assets/images/_02_AngDriveFacade.png)
 
 >  Параметры ниже изменяют поведение контролируемого объекта.
 >  
@@ -109,4 +109,4 @@ Cube (2):
 Зажмите `ЛКМ` (`Left_Trigger`), чтобы схватить объект левым контроллером, `ПКМ` (`Right_Trigger`) - правым. 
 Не отпуская клавишу, отведите контроллер в сторону. Дверь открылась!
 
-![Step 3](assets/images/Door.gif)
+![Step Final](assets/images/Door.gif)
