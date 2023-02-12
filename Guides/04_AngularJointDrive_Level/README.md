@@ -59,7 +59,7 @@
 
 Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
 
-![Step 4](assets/images/_04_AngDriveFacade_Controllable.png)
+![Step 4](assets/images/_04_Controllable.png)
 
 > Данный инструмент автоматически преобразует объект в один из видов контролируемых объектов, добавляя необходимые скрипты/объекты/компоненты.
 > Существует четыре типа:
