@@ -23,7 +23,7 @@
 
 В объекте `DoorExample` создайте `Cube` (`Main Menu -> GameObject -> 3D Object -> Cube`). 
 Измените параметры компонента `Transform`:
-
+  - Position: `X = 0, Y = 1, Z = 0`
   - Scale: `X = 0.8, Y = 1.8, Z = 0.1`
 	
 Переименуйте в `Door`.
@@ -31,6 +31,8 @@
 ### Шаг 3
 
 В объекте `DoorExample` создайте пустой объект и переименуйте в `DoorFrame`.
+
+  - Position: `X = 0, Y = 0, Z = 0`
 
 В объекте `DoorFrame` разместите три `Cube` и измените им следующие параметры: 
 
