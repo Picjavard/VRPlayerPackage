@@ -67,7 +67,7 @@ Rename the new `Cube` to `Top`.
 
 Переименуйте `Top (4)` на `LeftSide`.
 
-![Cabinet Created](assets/images/_05_DrawerAll.png)
+![Cabinet Created](assets/images/_05_Drawerall.png)
 
 ### Step 4
 
@@ -80,7 +80,7 @@ Rename the new `Cube` to `Top`.
 
   * Position: `X = 0, Y = 0.375, Z = -0.2`
 
-![Set Position Of Linear Joint Drive](assets/images/_05_.png)
+![Set Position Of Linear Joint Drive](assets/images/_05_Linera.png)
 
 ### Step 6
 
@@ -91,7 +91,7 @@ Rename the new `Cube` to `Top`.
 
 Переименуйте `Cube` на `DrawerFront`.
 
-![Creating Front Of Drawer](assets/images/_5_.png)
+![Creating Front Of Drawer](assets/images/_05_DrawerFront.png)
 
 ### Step 7
 
@@ -135,7 +135,7 @@ Rename the new `Cube` to `Top`.
 
 Переименуйте `DrawerFront (5)` на `DrawerHandle`.
 
-![Drawer Created](assets/images/DrawerCreated.png)
+![Drawer Created](assets/images/_05_DrawerView.png)
 
 ### Step 8
 
