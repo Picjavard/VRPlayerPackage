@@ -103,6 +103,7 @@ Please refer to the [installation] guide to install this package.
 * `Tilia.Utilities.ObjectStateSwitcher.Unity`
 * `Tilia.Visuals.CollisionFader.Unity`
 * `Tilia.Visuals.Tooltip.Unity`
+* `Tilia.Indicators.ObjectPointers.Unity`
 
 Нажмите на кнопку `Add Selected Packages`.
 
