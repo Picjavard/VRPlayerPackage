@@ -16,3 +16,4 @@
 
 ## Поддержка
 
+https://yoomoney.ru/fundraise/SzaO6AEXfKY.230228
