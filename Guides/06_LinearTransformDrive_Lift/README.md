@@ -27,7 +27,7 @@
   
 Переименуйте в `Platform`.
 
-![Create Top](assets/images/_05_DrawerTop.png)
+![Create Top](assets/images/_06_Platform.png)
 
 ### Step 3
 
@@ -56,13 +56,13 @@
 
 Переименуйте `Platform (3)` на `Handrail 3`.
 
-![Cabinet Created](assets/images/_05_Drawerall.png)
+![Cabinet Created](assets/images/_06_LiftAll.png)
 
 ### Step 4
 
 Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
 
-![Step 4](assets/images/_04_Controllable.png)
+![Step 4](assets/images/_06_ControlCreator.png)
 
 > Данный инструмент автоматически преобразует объект в один из видов контролируемых объектов, добавляя необходимые скрипты/объекты/компоненты.
 > Существует четыре типа:
@@ -82,7 +82,7 @@
 
 Измените параметры у компонента `Linear Transform Drive` объекта `Interactions.LinearTransformDrive_Lift`
 
-![Step 4](assets/images/_04_AngDriveFacade.png)
+![Step 5](assets/images/_06_LinearTransformDrive.png)
 
 >  Параметры ниже изменяют поведение контролируемого объекта.
 >  
@@ -113,13 +113,14 @@
 
   - Position: `X = 0.375, Y = 0.75, Z = -0.5`
 
-![Creating Front Of Drawer](assets/images/_05_DrawerFront.png)
+![Creating Front Of Drawer](assets/images/_06_AddLevel.png)
+![Creating Front Of Drawer](assets/images/_06_AddLevel1.png)
 
 ### Step 7
 
-Найдите дочерний объект `Interactions.AngularJointDrive_Handle` у объекта `Level`  и измените параметры компонента `Angular Joint Drive`
+Найдите дочерний объект `Interactions.AngularJointDrive_Handle` у объекта `Level` и измените параметры компонента `Angular Joint Drive`
 
-![Creating Front Of Drawer](assets/images/_05_DrawerFront.png)
+![Creating Front Of Drawer](assets/images/_06_AngularDriveFacade.png)
 
 ### Step 8
 
@@ -148,15 +149,11 @@
 Выберите исполняющую функцию `LinearDriveFacade -> MoveToTargetValue`. 
 
 
-![Step 5](assets/images/_04_MinActionAdd.png)
-
-![Step 5](assets/images/_04_MinActionAddA.png)
-
-![Step 5](assets/images/_04_MinActionAddA-.png)
+![Step 5](assets/images/_06_Min.png)
 
 Повторите те же действия для `MaximumReached`, но в `TargetValue` поставьте `1`.
 
-![Step 5](assets/images/_04_MaxAction.png)
+![Step 5](assets/images/_06_Max.png)
 
 ### Done
 
