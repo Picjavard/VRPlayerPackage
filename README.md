@@ -16,4 +16,4 @@
 
 ## Поддержка
 
-![Sbor.png(https://yoomoney.ru/fundraise/SzaO6AEXfKY.230228)](/img/Sbor.png)
+[![Sbor.png](/img/Sbor.png)](https://yoomoney.ru/fundraise/SzaO6AEXfKY.230228)
