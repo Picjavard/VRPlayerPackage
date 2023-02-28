@@ -134,7 +134,7 @@
 Выберите объект `AngularJointDrive_Handle`, в компоненте `AngularJointDrive` нажмите на кнопку `Show Minimum Value Reached Action`.
 Выберите подсветившийся объект `MinimumReached`.
 
-![Step 5](assets/images/_04_MinAction.png)
+![Step 5](assets/images/_06_MinButt.png)
 
 Раскройте событие `Activated (Boolean)` и нажмите на `+`. 
 
