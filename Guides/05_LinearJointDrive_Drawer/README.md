@@ -23,13 +23,6 @@
   
 Переименуйте в `Top`.
 
-Create a new `Cube` Unity 3D Object by selecting `Main Menu -> GameObject -> 3D Object -> Cube` and make it a child of the `Cabinet` GameObject then change the Transform properties to:
-
-* Position: `X = 0, Y = 0.5, Z = 0`
-* Scale: `X = 0.43, Y = 0.01, Z = 0.4`
-
-Rename the new `Cube` to `Top`.
-
 ![Create Top](assets/images/_05_DrawerTop.png)
 
 > Поменяйте материал у объекта - будет проще различать в дальнейшем.
@@ -73,7 +66,6 @@ Rename the new `Cube` to `Top`.
 
 Добавьте `Interactions.LinearJointDrive` в объект `DrawerExample` выбрав `GameObject -> Tilia -> Prefabs -> Interactions -> Controllables -> PhysicsJoint -> Interactions.LinearJointDrive`.
 
-> The `Interactions.LinearJointDrive` prefab uses Unity joints and therefore works within the Unity physics system, however the `Interactions.LinearTransformDrive` is a linear drive that does not utilize joints or physics and can easily be swapped in place at this step if required.
 ### Step 5
 
 Выберите `Interactions.LinearJointDrive` и измените параметры компонента `Transform`:
@@ -84,7 +76,7 @@ Rename the new `Cube` to `Top`.
 
 ### Step 6
 
-Пройдите к объекту `DrawerExample -> Interactions.LinearJointDrive -> Internal -> JointGameObject` и измените параметры компонента `Transform`:
+Пройдите к объекту `DrawerExample -> Interactions.LinearJointDrive -> Internal -> JointContainer -> Joint -> Interactions.Interactable -> MeshContainer -> Cube` и измените параметры компонента `Transform`:
 
 * Position: `X = 0, Y = 0, Z = -0.2`
 * Scale: `X = 0.4, Y = 0.25, Z = 0.01`
