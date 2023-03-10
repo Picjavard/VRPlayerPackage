@@ -6,161 +6,98 @@
 
 ## Introduction
 
-Самый простой лифт - это платформа, которая двигается вдоль вертикальной оси, перемещая предметы или игрока.
-В отличие от `Linear Joint Drive`, `Linear Transform Drive` игнорирует физические столкновения с другими интерактивными предметами, поэтому сдвинуть лифт другим предметом не получится (что нам и нужно).
+SnapZone (слот) - это область, куда можно поместить интерактивный предмет (Interactable). Передмет как бы примагничивается к определенной точке данной зоны.
 
 ## Let's Start
 
 ### Шаг 1
 
-Создайте пустой объект (`Main Menu -> GameObject -> Create Empty`) и переименуйте в `LiftExample`.
+Создайте пустой объект (`Main Menu -> GameObject -> Create Empty`) и переименуйте в `SnapZoneExample`.
 
 ### Step 2
 
-В объекте `LiftExample` создайте пустой объект (`ПКМ -> Create Empty`) и переименуйте в `Lift`.
-Все объекты внутри него будут являться частями лифта (платформа и поручни).
+В объекте `SnapZoneExample` создайте `SnapZone` (`ПКМ -> Tilia -> Prefabs -> Interactions -> SnapZone -> Interactions.Snapzone`).
 
-В объекте `Lift` создайте объект `Cube` (`ПКМ -> 3D Object -> Cube`). Измените параметры компонента `Transform`:
+Измените параметры компонента `Transform`:
 
-  - Position: `X = 0, Y = 0, Z = 0`
-  - Scale: `X = 1, Y = 0.05, Z = 1`
-  
-Переименуйте в `Platform`.
+  - Position: `X = 0, Y = 1, Z = 0`
 
-![Create Top](assets/images/_06_Platform.png)
+![Create Top](assets/images/_07_Prefab.png)
+
+![Create Top](assets/images/_07_Transform.png)
 
 ### Step 3
 
-Создайте дочерние объекты у `Lift` путем дублирования объекта `Platform`.
+Для уменьшение зоны активации захвата предметов измените параметр `Size` на `0.3` у компонента `Sphere Collider` у объекта `Interactions.Snapzone -> ActivationCollisionArea`.
 
-У каждого получившегося объекта измените параметры компонента `Transform`:
-
-#### Platform (1)
-
-* Position: `X = -0.5, Y = 0.635, Z = 0`
-* Scale: X = `0.05, Y = 0.05, Z = 1`
-
-Переименуйте `Platform (1)` на `Handrail 1`.
-
-#### Platform (2)
-
-* Position: `X = 0, Y = 0.635, Z = -0.5`
-* Scale: `X = 1, Y = 0.05, Z = 0.05`
-
-Переименуйте `Platform (2)` на `Handrail 2`.
-
-#### Platform (3)
-
-* Position: `X = 0, Y = 0.635, Z = 0.5`
-* Scale: `X = 1, Y = 0.05, Z = 0.05`
-
-Переименуйте `Platform (3)` на `Handrail 3`.
-
-![Cabinet Created](assets/images/_06_LiftAll.png)
+![Create Top](assets/images/_07_ActivCollision.png)
 
 ### Step 4
 
-Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
+Пройдите к объекту `Interactions.Snapzone -> SnapDestination -> DestinationHighlight -> HighlightMeshContainer -> DefaultHighlightMesh` и отключите его.
+Вместо него создайте в том же родительском объекте `HighlightMeshContainer` сферу (`ПКМ -> 3D -> Sphere`) и измените параметры у компонента `Transform`:
 
-![Step 4](assets/images/_06_ControlCreator.png)
+	- Scale: `X = 0.6, Y = 0.6, Z = 0.6`
 
-> Данный инструмент автоматически преобразует объект в один из видов контролируемых объектов, добавляя необходимые скрипты/объекты/компоненты.
-> Существует четыре типа:
->	
->   - `Linear Joint Drive` - Прямолинейное движение объекта от точки до точки. Использует физичеcкое взаимодействие Rigidbody.
->   - `Linear Transform Drive` - Прямолинейное движение объекта от точки до точки. Kinematic.
->   - `Angular Joint Drive` - Вращательное движение объекта вокруг оси. Использует физичеcкое взаимодействие Rigidbody.
->   - `Angular Transform Drive` - Вращательное движение объекта вокруг оси. Kinematic.
-	
-Выберите тип `Linear Transform Drive`.
+Отключите или удалите компонент `Sphere Collider`.
 
-Выберите объект `Lift` и нажмите на кнопку `Convert`.
+Измените материал сферы на любой прозрачный материал (скачанный/созданный)
 
-Добавьте `Interactions.LinearTransformDrive` в объект `DrawerExample` выбрав `GameObject -> Tilia -> Prefabs -> Interactions -> Controllables -> PhysicsJoint -> Interactions.LinearJointDrive`.
+![Create Top](assets/images/_07_Sphere.png)
+
+![Create Top](assets/images/_07_Highlight.png)
 
 ### Step 5
 
-Измените параметры у компонента `Linear Transform Drive` объекта `Interactions.LinearTransformDrive_Lift`
+Для изменения положения/вращения/размера предмета при примагничивании к слоту необходимо задать параметры у объекта `DestinationLocation`.
+Пройдите к объекту `Interactions.Snapzone -> SnapDestination -> DestinationLocation` и измените параметры у компонента `Transform`:
 
-![Step 5](assets/images/_06_LinearTransformDrive.png)
+	- Position: `X = -0.15, Y = 0.3, Z = 0`
+	
+	- Rotation: `X = 180, Y = 90, Z = 0`
 
->  Параметры ниже изменяют поведение контролируемого объекта.
->  
->  * `Drive Axis` - Ось поворота объекта (`X`,`Y` или `Z`).
->  * `Drive Speed` - Скорость поворота. Чем выше, тем меньше движений рукой надо сделать, чтобы повернуть объект.
->  * `Ungrabbed Drag` - Трение при свободном движении.
->  * `Grabbed Drag` - Трение при движении с захватом рукой.
->  * `Start At Initial Target Value` - Начинать с определенного начального положения.
->  * `Initial Target Value` - Значения начального положения (0 и 1 - крайние положения).
->  * `Move To Target Value` - Двигать объект в определенное положение (работает только в режиме `Play`).
->  * `Target Value` - Определенное положение для предыдущего параметра.(работает только в режиме `Play`).
->  * `Step Range` - Разбивает на части весь путь движения объекта от мин до макс.
->  * `Step Increment` - Трение при движении с захватом рукой.
->  * `Snap To Step to Release` - При свободном движении не продолжает двигаться по инерции, а доходит до точек(`Step`), указанных в двух предыдущих параметрах.
->  * `Drive Limit` - Ограничение поворота объекта в градусах.
->  * `Hinge Location` - Координаты оси поворота относительно якоря объекта (`Attach Point`).
->  * `Gizmo Line Distance` - Ось поворота отображается линией в редакторе. Длина оси.
->  * `Gizmo Sphere Radius` - Размер сфер на концах оси.
+![Step 5](assets/images/_07_Destination.png)
+
+
 
 ### Step 6
 
-Чтобы управлять лифтом потребуется рычаг (Level).
-Как сделать рычаг можно посмотреть в инструкции [Создание вращаемого объекта (Angular Joint Drive, Рычаг)](/Guides/04_AngularJointDrive_Level/)
+Чтобы проверить как работает SnapZone потребуется интерактивный объект (Sword).
+Как сделать интерактивный объект можно посмотреть в инструкции [Создание интерактивного объекта (Interactable)](/Guides/01_Interactive/)
 
-Поместите рычаг в `LiftExample -> Interactions.LinearTransformDrive_Lift -> Internal -> InteractableContainer -> Interactions.Interactable -> MeshContainer` на одном уровне с `Lift`
+Также понадобится стойка (основа), чтобы `SnapZone` не висел в воздухе (а это выглядит странно).
 
-Измените параметры компонента `Transform` объекта `Level`:
-
-  - Position: `X = 0.375, Y = 0.75, Z = -0.5`
-
-![Creating Front Of Drawer](assets/images/_06_AddLevel.png)
-![Creating Front Of Drawer](assets/images/_06_AddLevel1.png)
+![Creating Front Of Drawer](assets/images/_07_SnapZone.png)
+![Creating Front Of Drawer](assets/images/_07_Stand.png)
+![Creating Front Of Drawer](assets/images/_07_Sword.png)
+![Creating Front Of Drawer](assets/images/_07_Hierarchy.png)
 
 ### Step 7
 
-Найдите дочерний объект `Interactions.AngularJointDrive_Handle` у объекта `Level` и измените параметры компонента `Angular Joint Drive`
+Настроим компонент `Snap Zone Facade` так, чтобы предмет перемещался к слоту в течение одной секунды и чтобы при запуске сцены меч уже находился в слоте:
 
-![Creating Front Of Drawer](assets/images/_06_AngularDriveFacade.png)
+`Transition Duration` установите на `1`
 
-### Step 8
+Перетащите интерактивный объект `Sword` в параметр `Initial Snapped Interactable`.
 
-Теперь необходимо настроить события (`Events`), которые срабатывают при размещении рычага в крайних положениях.
-Для `AngularJointDrive` доступны (по умолчанию) три ослеживаемых действия (`Action`):
+>  Параметры ниже изменяют поведение `SnapZone`.
+>  
+>  * `Snap Validity` - Правило (Rule) согласно которому происходит примагничивание объекта к слоту.
+>  * `Transition Duratioт` - Скорость перехода объекта с момента попадания в зону активации до прикрепленного состояния(`Snapped`).
+>  * `Initial Snapped Interactable` - При запуске сцены указанный предмет будет изначально прикреплен к слоту.
+>  * `Auto Snap Trown Objects` - При включенном состоянии слот может "ловить" любые проходяшие зону активации интерактивные объекты, а не только те, что помещаются рукой.
+>  * `Zone Events` - Параметры срабатываемых событий (Events).
 
-  - `Minimum Value Reached Action` - действие при достижении минимального положения.
-  - `Middle Value Reached Action` - действие при достижении среднего положения.
-  - `Mmaximum Value Reached Action` - действие при достижении максимального положения.
+![Creating Front Of Drawer](assets/images/_07_Facade.png)
 
-Выберите объект `AngularJointDrive_Handle`, в компоненте `AngularJointDrive` нажмите на кнопку `Show Minimum Value Reached Action`.
-Выберите подсветившийся объект `MinimumReached`.
-
-![Step 5](assets/images/_06_MinButt.png)
-
-Раскройте событие `Activated (Boolean)` и нажмите на `+`. 
-
-> Сюда небходимо добавлять события, которые должны выполняться, по достижению рукоятки минимального положения.
-
-Перенесите объект `Interactions.LinearTransformDrive_Lift` в поле None (Object). 
-Выберите исполняющую функцию `LinearDriveFacade -> float TargetValue`. 
-Введите значение `0`. 
-
-Нажмите еще раз на `+`. 
-Перенесите объект `Interactions.LinearTransformDrive_Lift` в поле None (Object). 
-Выберите исполняющую функцию `LinearDriveFacade -> MoveToTargetValue`. 
-
-
-![Step 5](assets/images/_06_Min.png)
-
-Повторите те же действия для `MaximumReached`, но в `TargetValue` поставьте `1`.
-
-![Step 5](assets/images/_06_Max.png)
 
 ### Done
 
 Нажмите на `Play`.
-Переместите контроллер к рукоятке рычага так, чтобы ее коснуться. 
+Переместите контроллер к мечу так, чтобы его коснуться. 
 Зажмите `ЛКМ` (`Left_Trigger`), чтобы схватить объект левым контроллером или `ПКМ` (`Right_Trigger`) - правым. 
-Не отпуская клавишу, отведите контроллер в сторону. Лифт начнет движение
+Не отпуская клавишу, отведите контроллер в сторону. Полупрозрачная сфера исчезнет, как только меч покинет зону, и появится снова, как только меч зайдет в зону.
+Если отпустить клавишу, то меч прикрепится к слоту в течении 1 сек.
 
-![Step Final](assets/images/Lift.gif)
+![Step Final](assets/images/SnapZone.gif)
 
