@@ -96,11 +96,13 @@ Please refer to the [installation] guide to install this package.
 * `Tilia.Interactions.Controllables.Unity`
 * `Tilia.Interactions.Interactables.Unity`
 * `Tilia.Interactions.SnapZone.Unity`
+* `Tilia.Interactions.SpatialButtons.Unity`
 * `Tilia.Locomotors.AxisMove.Unity`
 * `Tilia.Mutators.CollisionIgnorer.Unity`
 * `Tilia.Trackers.ColliderFollower.Unity`
 * `Tilia.Trackers.PseudoBody.Unity`
 * `Tilia.Utilities.ObjectStateSwitcher.Unity`
+* `Tilia.Visuals.BasicHand.Unity`
 * `Tilia.Visuals.CollisionFader.Unity`
 * `Tilia.Visuals.Tooltip.Unity`
 * `Tilia.Indicators.ObjectPointers.Unity`
