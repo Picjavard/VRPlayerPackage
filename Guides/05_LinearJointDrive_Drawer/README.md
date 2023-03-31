@@ -14,7 +14,7 @@
 
 Создайте пустой объект (`Main Menu -> GameObject -> Create Empty`) и переименуйте в `DrawerExample`.
 
-### Step 2
+### Шаг 2
 
 В объекте `DrawerExample` создайте объект `Cube` (`ПКМ -> 3D Object -> Cube`). Измените параметры компонента `Transform`:
 
@@ -26,7 +26,7 @@
 ![Create Top](assets/images/_05_DrawerTop.png)
 
 > Поменяйте материал у объекта - будет проще различать в дальнейшем.
-### Step 3
+### Шаг 3
 
 Создайте дочерние объекты у `DrawerExample` путем дублирования объекта `Top`.
 
@@ -62,11 +62,11 @@
 
 ![Cabinet Created](assets/images/_05_Drawerall.png)
 
-### Step 4
+### Шаг 4
 
 Добавьте `Interactions.LinearJointDrive` в объект `DrawerExample` выбрав `GameObject -> Tilia -> Prefabs -> Interactions -> Controllables -> PhysicsJoint -> Interactions.LinearJointDrive`.
 
-### Step 5
+### Шаг 5
 
 Выберите `Interactions.LinearJointDrive` и измените параметры компонента `Transform`:
 
@@ -74,7 +74,7 @@
 
 ![Set Position Of Linear Joint Drive](assets/images/_05_Linera.png)
 
-### Step 6
+### Шаг 6
 
 Пройдите к объекту `DrawerExample -> Interactions.LinearJointDrive -> Internal -> JointContainer -> Joint -> Interactions.Interactable -> MeshContainer -> Cube` и измените параметры компонента `Transform`:
 
@@ -85,7 +85,7 @@
 
 ![Creating Front Of Drawer](assets/images/_05_DrawerFront.png)
 
-### Step 7
+### Шаг 7
 
 Создайте дочерние объекты у `MeshContainer` путем дублирования объекта `DrawerFront`.
 
@@ -129,7 +129,7 @@
 
 ![Drawer Created](assets/images/_05_DrawerView.png)
 
-### Step 8
+### Шаг 8
 
 Выберите `DrawerExample -> Interactions.LinearJointDrive` и измените параметры компонента `Linear Drive Facade`:
 
@@ -142,7 +142,7 @@
 
 ![Configure Linear Joint Drive](assets/images/_05_LinearDriveFacade.png)
 
-### Done
+## Готово
 
 Нажмите на `Play`.
 Переместите контроллер к рукоятке рычага так, чтобы ее коснуться. 
