@@ -15,7 +15,7 @@
 
 Создайте пустой объект (`Main Menu -> GameObject -> Create Empty`) и переименуйте в `LiftExample`.
 
-### Step 2
+### Шаг 2
 
 В объекте `LiftExample` создайте пустой объект (`ПКМ -> Create Empty`) и переименуйте в `Lift`.
 Все объекты внутри него будут являться частями лифта (платформа и поручни).
@@ -29,7 +29,7 @@
 
 ![Create Top](assets/images/_06_Platform.png)
 
-### Step 3
+### Шаг 3
 
 Создайте дочерние объекты у `Lift` путем дублирования объекта `Platform`.
 
@@ -58,7 +58,7 @@
 
 ![Cabinet Created](assets/images/_06_LiftAll.png)
 
-### Step 4
+### Шаг 4
 
 Откройте `Window -> Tilia -> Interactions -> Controllable Creator`. 
 
@@ -78,7 +78,7 @@
 
 Добавьте `Interactions.LinearTransformDrive` в объект `DrawerExample` выбрав `GameObject -> Tilia -> Prefabs -> Interactions -> Controllables -> PhysicsJoint -> Interactions.LinearJointDrive`.
 
-### Step 5
+### Шаг 5
 
 Измените параметры у компонента `Linear Transform Drive` объекта `Interactions.LinearTransformDrive_Lift`
 
@@ -102,7 +102,7 @@
 >  * `Gizmo Line Distance` - Ось поворота отображается линией в редакторе. Длина оси.
 >  * `Gizmo Sphere Radius` - Размер сфер на концах оси.
 
-### Step 6
+### Шаг 6
 
 Чтобы управлять лифтом потребуется рычаг (Level).
 Как сделать рычаг можно посмотреть в инструкции [Создание вращаемого объекта (Angular Joint Drive, Рычаг)](/Guides/04_AngularJointDrive_Level/)
@@ -116,13 +116,13 @@
 ![Creating Front Of Drawer](assets/images/_06_AddLevel.png)
 ![Creating Front Of Drawer](assets/images/_06_AddLevel1.png)
 
-### Step 7
+### Шаг 7
 
 Найдите дочерний объект `Interactions.AngularJointDrive_Handle` у объекта `Level` и измените параметры компонента `Angular Joint Drive`
 
 ![Creating Front Of Drawer](assets/images/_06_AngularDriveFacade.png)
 
-### Step 8
+### Шаг 8
 
 Теперь необходимо настроить события (`Events`), которые срабатывают при размещении рычага в крайних положениях.
 Для `AngularJointDrive` доступны (по умолчанию) три ослеживаемых действия (`Action`):
