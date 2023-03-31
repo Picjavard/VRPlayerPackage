@@ -25,9 +25,9 @@
 Создайте несколько интерактивных объектов `Stone` и `Plank`. 
 Как создать интерактивный объект можно узнать в гайде [Создание интерактивного объекта (Interactable)](/Guides/01_Interactive/).
 
-![Create Top](assets/images/_08_Create.png)
+![Create Top](assets/images/_11_Create.png)
 
-![Create Top](assets/images/_08_Hierarchy.png)
+![Create Top](assets/images/_11_Hierarchy.png)
 
 ### Шаг 3
 
