@@ -11,7 +11,7 @@
 5. [Создание выдвижного ящика (Linear Joint Drive)](/Guides/05_LinearJointDrive_Drawer/) :white_check_mark:
 6. [Создание лифта (Linear Transform Drive)](/Guides/06_LinearTransformDrive_Lift/) :white_check_mark:
 7. [Создание слота (Snap Zone)](/Guides/07_SnapZone/) :white_check_mark:
-8. [Создание механики добычи руды (Collision Tracker, Game Object Cloner, Any Component Type Rule)] 🔃
+8. [Создание механики добычи руды (Collision Tracker, Game Object Cloner, Any Component Type Rule)] :question:
 9. [Создание верстака с рецептами (Snap Zone, Game Object Cloner)] :x:
 
 ## Поддержка
