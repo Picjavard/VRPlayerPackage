@@ -25,9 +25,9 @@
 Создайте несколько интерактивных объектов `Stone` и `Plank` и объедините их в родительский объект `TestCrafting`. 
 Как создать интерактивный объект можно узнать в гайде [Создание интерактивного объекта (Interactable)](/Guides/01_Interactive/).
 
-![Create Top](assets/images/_11_Create.png)
+![Create Top](assets/images/_08_Create.png)
 
-![Create Top](assets/images/_11_Hierarchy.png)
+![Create Top](assets/images/_08_Hierarchy.png)
 
 ### Шаг 3
 
@@ -66,28 +66,33 @@
 
 Компонентом `Tag_Item_Stone` будет являться пустой пользовательский скрипт. 
 В папке `Scripts -> Tags` (при отсутствии создайте эти папки) создайте скрипт с названием `Tag_Item_Stone` (`ПКМ -> Create -> C# Script`).
-Откройте скрипт и удалите лишние функции и строки:
+Откройте скрипт и удалите лишние функции и строки. В итоге скрипт должен выглядеть так:
 
 ```
 using UnityEngine;
 public class Tag_Item_Stone : MonoBehaviour {}
 ```
 
-![Step 5](assets/images/_07_Destination.png)
+Перетащите получившийся скрипт `Tag_Item_Stone` на объект камня (`Interactions.Interactable_Stone`).
 
+![Step 5](assets/images/_08_Scripts.png)
 
+![Step 5](assets/images/_08_Comp.png)
 
 ### Шаг 6
 
-Чтобы проверить как работает SnapZone потребуется интерактивный объект (Sword).
-Как сделать интерактивный объект можно посмотреть в инструкции [Создание интерактивного объекта (Interactable)](/Guides/01_Interactive/)
+Теперь необходимо создать правило. Выберите объект `Group 1` - он будет содержать правило для слота.
 
-Также понадобится стойка (основа), чтобы `SnapZone` не висел в воздухе (а это выглядит странно).
+Нажмите на `Window -> Zinnia -> Observable List Component Generator` и в появившемся окне измените параметр `Component Type` на `Any Component Type Rule` (правило "Любой объект с определенным типом компонента")
+Проверьте название параметра `Generate in` содержит `[Group 1]` и на жмите на кнопку `Generate Component`.
 
-![Creating Front Of Drawer](assets/images/_07_SnapZone.png)
-![Creating Front Of Drawer](assets/images/_07_Stand.png)
-![Creating Front Of Drawer](assets/images/_07_Sword.png)
-![Creating Front Of Drawer](assets/images/_07_Hierarchy.png)
+Выберите созданный объект `AnyComponentTypeRule_Container` и в инспекторе у параметра компонента `AnyComponentTypeRule` добавьте новый элемент (`+`). Выберите `Tag_Item_Stone`.
+
+![Creating Front Of Drawer](assets/images/_08_Observable.png)
+
+![Creating Front Of Drawer](assets/images/_08_Container.png)
+
+![Creating Front Of Drawer](assets/images/_08_Container2.png)
 
 ### Шаг 7
 
