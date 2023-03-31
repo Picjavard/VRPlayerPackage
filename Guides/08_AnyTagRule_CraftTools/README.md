@@ -18,11 +18,11 @@
 
 Для примера понадобится стол (Platform) и несколько интерактивных объектов (палка, камень).
 
-В объекте `CraftingExample` создайте `Cube` (`Main Menu -> GameObject -> 3D Object -> Cube`).
+В объекте `CraftingExample` создайте `Cube` (`ПКМ -> GameObject -> 3D Object -> Cube`).
 
 Переименуйте этот объект в `Platform` и разместите на некотором растоянии от земли.
 
-Создайте несколько интерактивных объектов `Stone` и `Plank`. 
+Создайте несколько интерактивных объектов `Stone` и `Plank` и объедините их в родительский объект `TestCrafting`. 
 Как создать интерактивный объект можно узнать в гайде [Создание интерактивного объекта (Interactable)](/Guides/01_Interactive/).
 
 ![Create Top](assets/images/_11_Create.png)
@@ -31,24 +31,33 @@
 
 ### Шаг 3
 
-Для уменьшение зоны активации захвата предметов измените параметр `Size` на `0.3` у компонента `Sphere Collider` у объекта `Interactions.Snapzone -> ActivationCollisionArea`.
+В объекте `Interactions.Interactable_Plank -> MeshContainer` создайте два пустых контейнера `Group 1` и `Group 2`. 
+Поместите все составляющие палку объекты в `Group 1`. 
 
-![Create Top](assets/images/_07_ActivCollision.png)
+![Create Top](assets/images/_08_Group.png)
 
 ### Шаг 4
+
+Создайте `SnapZone` у объекта `Interactions.Interactable_Plank`. Ее необходимо разместить в объекте `Group 1`. 
+Как создать слот (`SnapZone`) можно узнать в гайде [Создание слота (Snap Zone)](/Guides/07_SnapZone/).
+
+<details><summary> :green_circle: Дополнительно :green_circle: </summary>
+
+Для уменьшение зоны активации захвата предметов измените параметр `Size` на `0.1` у компонента `Sphere Collider` у объекта `Interactions.Snapzone -> ActivationCollisionArea`.
 
 Пройдите к объекту `Interactions.Snapzone -> SnapDestination -> DestinationHighlight -> HighlightMeshContainer -> DefaultHighlightMesh` и отключите его.
 Вместо него создайте в том же родительском объекте `HighlightMeshContainer` сферу (`ПКМ -> 3D -> Sphere`) и измените параметры у компонента `Transform`:
 
-	- Scale: `X = 0.6, Y = 0.6, Z = 0.6`
+	- Scale: `X = 0.1, Y = 0.1, Z = 0.1`
 
 Отключите или удалите компонент `Sphere Collider`.
 
-Измените материал сферы на любой прозрачный материал (скачанный/созданный)
+Измените материал сферы на любой прозрачный материал (скачанный/созданный).
 
-![Create Top](assets/images/_07_Sphere.png)
+</details>
 
-![Create Top](assets/images/_07_Highlight.png)
+![Create Top](assets/images/_08_SnapZone.png)
+
 
 ### Шаг 5
 
