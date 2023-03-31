@@ -41,7 +41,7 @@
 Создайте `SnapZone` у объекта `Interactions.Interactable_Plank`. Ее необходимо разместить в объекте `Group 1`. 
 Как создать слот (`SnapZone`) можно узнать в гайде [Создание слота (Snap Zone)](/Guides/07_SnapZone/).
 
-<details><summary> :green_circle: Дополнительно :green_circle: </summary>
+<details><summary> :green_circle: Дополнительно :green_circle: </summary><p>
 
 Для уменьшение зоны активации захвата предметов измените параметр `Size` на `0.1` у компонента `Sphere Collider` у объекта `Interactions.Snapzone -> ActivationCollisionArea`.
 
@@ -54,7 +54,7 @@
 
 Измените материал сферы на любой прозрачный материал (скачанный/созданный).
 
-</details>
+</p></details>
 
 ![Create Top](assets/images/_08_SnapZone.png)
 
