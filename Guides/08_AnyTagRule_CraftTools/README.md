@@ -106,6 +106,8 @@ public class Tag_Item_Stone : MonoBehaviour {}
 
 ![Creating Front Of Drawer](assets/images/_08_Snapped.png)
 
+![Creating Front Of Drawer](assets/images/_08_SetActive.png)
+
 ![Creating Front Of Drawer](assets/images/_08_Axe.png)
 
 
@@ -116,5 +118,5 @@ public class Tag_Item_Stone : MonoBehaviour {}
 Зажмите `ЛКМ` (`Left_Trigger`), чтобы схватить объект левым контроллером или `ПКМ` (`Right_Trigger`) - правым. 
 Не отпуская клавишу, захватите камень другой рукой. Поднесите камень к палке (туда где `SnapZone`) и отпустите камень - палка превратится в топор.
 
-![Step Final](assets/images/SnapZone.gif)
+![Step Final](assets/images/CraftTools.gif)
 
