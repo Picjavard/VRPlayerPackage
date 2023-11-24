@@ -15,6 +15,9 @@
 9. [Создание механики добычи руды (Collision Tracker, Game Object Cloner, Any Component Type Rule)] :question:
 10. [Создание верстака с рецептами (Snap Zone, Game Object Cloner)] :x:
 
+## Префабы (Готовые объекты)
+
+[Prefabs](Prefabs)
 
 ## Поддержка
 
