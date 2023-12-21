@@ -7,3 +7,4 @@
 3. [Ремонт трубопровода](RepairPipe) :white_check_mark:
 4. [Обмен у торговца](Trade) :white_check_mark:
 5. [Аварийная лампа](EmergencyLamp) :white_check_mark:
+6. [Кодовый замок](CodeLock) :white_check_mark:
