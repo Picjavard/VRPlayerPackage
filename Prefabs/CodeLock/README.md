@@ -4,5 +4,5 @@
 
 <img src="https://github.com/Picjavard/VRPlayerPackage/assets/27041046/7de45fc4-a737-4bd4-805d-4b66a2061105" width=50% >
 
-<img src="https://github.com/Picjavard/VRPlayerPackage/assets/27041046/6f3683ac-b3d0-4d5a-bf03-9616d7e40a96" width=50% >
+<img align="right" src="https://github.com/Picjavard/VRPlayerPackage/assets/27041046/6f3683ac-b3d0-4d5a-bf03-9616d7e40a96" width=50% >
 
