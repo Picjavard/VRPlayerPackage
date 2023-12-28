@@ -8,3 +8,5 @@
 4. [Обмен у торговца](Trade) :white_check_mark:
 5. [Аварийная лампа](EmergencyLamp) :white_check_mark:
 6. [Кодовый замок](CodeLock) :white_check_mark:
+7. [Кнопка](Button) :white_check_mark:
+8. [Кислородная станция](OxygenStation) :white_check_mark:
