@@ -10,4 +10,4 @@
 6. [Кодовый замок](CodeLock) :white_check_mark:
 7. [Кнопка](Button) :white_check_mark:
 8. [Кислородная станция](OxygenStation) :white_check_mark:
-9. [Авирийный шкафчик](EmergencyLocker) :white_check_mark:
+9. [Аварийный шкафчик](EmergencyLocker) :white_check_mark:
