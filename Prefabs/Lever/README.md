@@ -13,6 +13,5 @@
 </p>
 
 <p align="center">
-  <img width="50%" src="https://github.com/Picjavard/VRPlayerPackage/assets/27041046/22a709ef-85fc-4abd-9b81-ef1e0c6c0ec1">
+  <img width="50%" src="https://github.com/Picjavard/VRPlayerPackage/assets/27041046/094f9acf-d1e5-44e2-97c4-3d379b496f79">
 </p>
-
