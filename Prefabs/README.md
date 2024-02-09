@@ -12,3 +12,4 @@
 8. [Кислородная станция](OxygenStation) :white_check_mark:
 9. [Аварийный шкафчик](EmergencyLocker) :white_check_mark:
 10. [Шлюз](Gateway) :white_check_mark:
+11. [Рычаг](Lever) :white_check_mark:
