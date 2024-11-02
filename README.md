@@ -14,6 +14,7 @@
 8. [Создание крафта инструмента (Interactablе, SnapZone, AnyTagRule)](/Guides/08_AnyTagRule_CraftTools/) :white_check_mark:
 9. [Создание механики добычи руды (Collision Tracker, Game Object Cloner, Any Component Type Rule)] :question:
 10. [Создание верстака с рецептами (Snap Zone, Game Object Cloner)] :x:
+10. [Система чекпойнтов(точек сохранения игрока) (Teleportation)] :x:
 
 ## Префабы (Готовые объекты)
 
