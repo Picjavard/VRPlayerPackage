@@ -2,7 +2,7 @@
 
 > * Reading Time: 10 minutes
 >
-> * Checked with: Unity 2021.3.9f1
+> * Checked with: Unity 2022.3.50f1
 
 ## Introduction
 
@@ -21,7 +21,8 @@ VRPP содержит уже настроенный префаб игрока с
 
 ![Step 1](assets/images/_1_Создание_проекта.png)
 
-Создайте новый примитивный объект `Cube` выбрав `Main Menu -> GameObject -> 3D Object -> Cube` и измените параметры компонента `Transform`:
+Для игрока нужен пол/платформа, который остановит игрока от падения вниз.
+Поэтому создайте новый примитивный объект `Cube` выбрав `Main Menu -> GameObject -> 3D Object -> Cube` и измените параметры компонента `Transform`:
 
 > * Position: `X = 0, Y = -0.5, Z = 0`
 > * Scale: `X = 3, Y = 1, Z = 3`
@@ -29,6 +30,8 @@ VRPP содержит уже настроенный префаб игрока с
 Переименуйте `Cube`	`rgb(9, 105, 218)`на `Floor`.
 
 ![Step 1](assets/images/_1_floor.png)
+
+Удалите `Main Camera` со сцены.
 
 ### Шаг 2
 
@@ -44,27 +47,13 @@ VRPP содержит уже настроенный префаб игрока с
 
 ![Step 2](assets/images/_2_Player.png)
 
+Обратите внимание на ошибки в консоли (красный текст внизу экрана). Они говорят об отсутствии некоторых вложенных префабов у игрока (частей игрока), которые необходимо скачать/установить на следущем шаге.
+
 ### Шаг 3
-
-Открыть настройки проекта `Edit -> Project Settings`. Перейти на `XR Plugin Management`. Установить плагин, нажав на кнопку `Install XR Plugin Management`. Поставить флажок напротив `Open XR`.
-
-![Step 3](assets/images/_3_ProjectSettings.png) 
-![Step 3](assets/images/_4_InstalXR.png)
-![Step 3](assets/images/_6_OpenXR.png)
-
-Появляется окно с предложением перейти на новую систему Input, выберите `NO`, после чего в консоли отобразится ошибка. Чтобы исправить ошибку, необходимо перейти в раздел `Player` и изменить параметр `Active Input Handling` на `Both` (новая система нужна для работы со шлемом, а старая для симуляции с клавиатуры). Принять презагрузку `Editor`.
-
-![Step 3](assets/images/_5_InputSystem.png)
-
-После перезагрузки пройти `Edit -> Project Settings -> XR Plugin Management -> Open XR` и создать новый профайл взаимодействия, выбрав в `Interaction Profiles` `Oculus Touch Controller Profile` и/или `HTC Vive Controller Profile`
-
-![Step 3](assets/images/_7_InterractionProfile.png)
-
-### Шаг 4
 
 Скачайте и импортируйте из Asset Store пакет `VRTK v4 Tilia Package Importer`. 
 
----> [ссылка] <---
+---> [vrtk-v4-tilia-package-importer] <---
 
 ![Step 4](assets/images/_8_TiliaDownload.png)
 ![Step 4](assets/images/_8_TiliaImport.png)
@@ -73,47 +62,47 @@ VRPP содержит уже настроенный префаб игрока с
 
 ![Step 4](assets/images/_8_UpgPackManager.png)
 
-<details><summary>[Устарело!]</summary>
-
-Please refer to the [installation] guide to install this package.
-Скачать .NET 4.x https://www.microsoft.com/ru-RU/download/details.aspx?id=17718
-
-</details>
-
-### Шаг 5
+### Шаг 4
 
 Откройте `Windows -> Tilia -> Package Importer` и нажмите на кнопку `Add Scoped Registry`. 
 
 ![Step 5](assets/images/_9_PImporter.png)
 ![Step 5](assets/images/_9_AddScoped.png)
 
-Поставьте флажки напротив следующих пакетов:
+Поставьте флажки напротив всех пакетов, кроме:
 
-* `Tilia.CameraRigs.SpatialSimulator.Unity`
-* `Tilia.CameraRigs.TrackedAlias.Unity`
-* `Tilia.CameraRigs.XRPluginFramework.Unity`
-* `Tilia.Input.UnityInputSystem`
-* `Tilia.Interactions.Controllables.Unity`
-* `Tilia.Interactions.Interactables.Unity`
-* `Tilia.Interactions.SnapZone.Unity`
-* `Tilia.Interactions.SpatialButtons.Unity`
-* `Tilia.Locomotors.AxisMove.Unity`
-* `Tilia.Mutators.CollisionIgnorer.Unity`
-* `Tilia.Trackers.ColliderFollower.Unity`
-* `Tilia.Trackers.PseudoBody.Unity`
-* `Tilia.Utilities.ObjectStateSwitcher.Unity`
-* `Tilia.Visuals.BasicHand.Unity`
-* `Tilia.Visuals.CollisionFader.Unity`
-* `Tilia.Visuals.Tooltip.Unity`
-* `Tilia.Indicators.ObjectPointers.Unity`
+* `tilia.sdk.oculusintegration.unity`
+* `tilia.sdk.picointegration.unity`
+* `tilia.sdk.steamvr.unity`
+* `tilia.sdk.wavexr.unity`
 
 Нажмите на кнопку `Add Selected Packages`.
 
 ![Step 5](assets/images/_9_AddSelected.png)
 
+Дождитесь окончания загрузки всех пакетов.
+
+Появляется окно с предложением перейти на новую систему Input, выберите `Yes`, после чего проект перезагрузится.
+
 В окне `Manage Unity InputManager Axis Definition` нажмите на кнопку `Add Input Definitions`.
 
 ![Step 5](assets/images/_11_Addinput.png)
+
+Закройте плавающие окна, если такие есть.
+
+### Шаг 5
+
+Открыть настройки проекта `Edit -> Project Settings`. Перейти на `XR Plugin Management`. Поставить флажок напротив `Open XR`.
+
+![Step 3](assets/images/_3_ProjectSettings.png) 
+![Step 3](assets/images/_6_OpenXR.png)
+
+
+После пройти `Edit -> Project Settings -> XR Plugin Management -> Project Validation` и нажать на `Fix All`. Дождитесь компиляции скриптов(два из трех желтых предупреждения исчезнут из списка).
+
+создать новый профайл взаимодействия, выбрав в `Interaction Profiles` `Oculus Touch Controller Profile` и/или `HTC Vive Controller Profile`
+
+![Step 3](assets/images/_7_InterractionProfile.png)
 
 ## Готово
 
@@ -124,7 +113,7 @@ Please refer to the [installation] guide to install this package.
 ![Step Final](assets/images/_10_Play.png)
 	
 [Installation]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity/blob/master/Documentation/HowToGuides/Installation/README.md
-[ссылка]: https://assetstore.unity.com/packages/tools/utilities/vrtk-v4-tilia-package-importer-214936
+[vrtk-v4-tilia-package-importer]: https://assetstore.unity.com/packages/tools/utilities/vrtk-v4-tilia-package-importer-214936
 [VRPlayerPackage]: assets/VRPlayerPackagePrefab/
 
 
