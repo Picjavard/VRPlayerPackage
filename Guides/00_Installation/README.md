@@ -39,9 +39,10 @@ VRPP содержит уже настроенный префаб игрока с
 
 ---> [VRPlayerPackage] <---
 
-![Step 2](assets/images/_2_VRPP.png)
-![Step 2](assets/images/_2_VRPP2.png)
-![Step 2](assets/images/_2_Импорт.png)
+![Screenshot_30](https://github.com/user-attachments/assets/1abbc212-928a-4ba2-8bd1-b7f32126c4ed)
+![Screenshot_31](https://github.com/user-attachments/assets/dcb7dacd-547e-423a-ad16-67ab5ae6d1cf)
+![Screenshot_32](https://github.com/user-attachments/assets/0c9b0596-97f0-4c51-bf39-5ac15c23b94c)
+
 
 Переместите на сцену префаб `Player`
 
