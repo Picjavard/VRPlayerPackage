@@ -122,6 +122,25 @@ VRPP содержит уже настроенный префаб игрока с
 	
 ![Screenshot_40](https://github.com/user-attachments/assets/5b1f8fad-2623-40e8-bc67-1e96d67a1c96)
 
+Movement
+ `W` - Move current object forward.
+ `A` - Move current object left.
+ `S` - Move current object backward.
+ `D` - Move current object right.
+Rotation
+ `Mouse` - Rotate current object up/down/left/right
+ `Mouse Scroll Wheel` - Optional circular axis (e.g. mimics rotating finger around a trackpad).
+Buttons
+ `Left Mouse Button` - Can be used as button input.
+ `Right Mouse Button` - Can be used as button input.
+ `Middle Mouse Button` - Can be used as button input.
+Control
+ `1` - Activate movement/rotation of the simulated PlayArea and deactivate movement/rotation of simulated Controllers.
+ `2` - Activate movement/rotation of the simulated Left Controller and deactivate movement/rotation of simulated PlayArea and Right Controller.
+ `3` - Activate movement/rotation of the simulated Right Controller and deactivate movement/rotation of simulated PlayArea and Left Controller.
+ `4` - Reset the position/rotation of the simulated PlayArea back to the default settings.
+ `5` - Reset the position/rotation of the simulated Controllers back to the default settings.
+ `6` - Lock/Unlock mouse cursor to Game window.
 	
 [Installation]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity/blob/master/Documentation/HowToGuides/Installation/README.md
 [vrtk-v4-tilia-package-importer]: https://assetstore.unity.com/packages/tools/utilities/vrtk-v4-tilia-package-importer-214936
