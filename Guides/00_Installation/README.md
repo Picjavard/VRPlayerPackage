@@ -122,23 +122,23 @@ VRPP содержит уже настроенный префаб игрока с
 	
 ![Screenshot_40](https://github.com/user-attachments/assets/5b1f8fad-2623-40e8-bc67-1e96d67a1c96)
 
-Movement
+**Movement**
 
- `W` - Move current object forward.
+  `W` - Move current object forward.
  
- `A` - Move current object left.
+  `A` - Move current object left.
  
- `S` - Move current object backward.
+  `S` - Move current object backward.
  
- `D` - Move current object right.
+  `D` - Move current object right.
  
-Rotation
+**Rotation**
 
  `Mouse` - Rotate current object up/down/left/right
  
  `Mouse Scroll Wheel` - Optional circular axis (e.g. mimics rotating finger around a trackpad).
  
-Buttons
+**Buttons**
 
  `Left Mouse Button` - Can be used as button input.
  
@@ -146,7 +146,7 @@ Buttons
  
  `Middle Mouse Button` - Can be used as button input.
  
-Control
+**Control**
 
  `1` - Activate movement/rotation of the simulated PlayArea and deactivate movement/rotation of simulated Controllers.
  
