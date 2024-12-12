@@ -46,7 +46,8 @@ VRPP содержит уже настроенный префаб игрока с
 
 Переместите на сцену префаб `Player`
 
-![Step 2](assets/images/_2_Player.png)
+![Screenshot_33](https://github.com/user-attachments/assets/266bb8fc-8c0e-48d3-827a-525e3d50c179)
+
 
 Обратите внимание на ошибки в консоли (красный текст внизу экрана). Они говорят об отсутствии некоторых вложенных префабов у игрока (частей игрока), которые необходимо скачать/установить на следущем шаге.
 
@@ -79,11 +80,17 @@ VRPP содержит уже настроенный префаб игрока с
 
 Нажмите на кнопку `Add Selected Packages`.
 
-![Step 5](assets/images/_9_AddSelected.png)
+![Screenshot_34](https://github.com/user-attachments/assets/c36c8cc5-3384-4169-a20d-309d1bc10f2b)
 
 Дождитесь окончания загрузки всех пакетов.
 
 Появляется окно с предложением перейти на новую систему Input, выберите `Yes`, после чего проект перезагрузится.
+
+![Screenshot_35](https://github.com/user-attachments/assets/249750aa-cda6-485c-b5a2-0595628f79ca)
+
+Если до этого момента еще не сохраняли сцену, то появится еще одно окно, где нужно выбрать сохранение сцены
+
+![Screenshot_36](https://github.com/user-attachments/assets/3fb4e7dc-30de-4919-828a-b62cb1fd5400)
 
 В окне `Manage Unity InputManager Axis Definition` нажмите на кнопку `Add Input Definitions`.
 
@@ -98,20 +105,23 @@ VRPP содержит уже настроенный префаб игрока с
 ![Step 3](assets/images/_3_ProjectSettings.png) 
 ![Step 3](assets/images/_6_OpenXR.png)
 
-
 После пройти `Edit -> Project Settings -> XR Plugin Management -> Project Validation` и нажать на `Fix All`. Дождитесь компиляции скриптов(два из трех желтых предупреждения исчезнут из списка).
 
-создать новый профайл взаимодействия, выбрав в `Interaction Profiles` `Oculus Touch Controller Profile` и/или `HTC Vive Controller Profile`
+![Screenshot_37](https://github.com/user-attachments/assets/5f9213f8-a6d1-43f0-be64-121f4ffb8ec1)
 
+Нажмите у оставшегося предупреждения на кнопку `Edit` и создайте новый профайл взаимодействия, выбрав в `Interaction Profiles` `Oculus Touch Controller Profile` и/или `HTC Vive Controller Profile`
+
+![Screenshot_38](https://github.com/user-attachments/assets/09248b6a-7cdb-41c0-94f7-77ba838fb3b8)
 ![Step 3](assets/images/_7_InterractionProfile.png)
 
 ## Готово
 
-Нажмите на `Play`. В правом верхем углу окна `Game` появится интерфейс с кнопками `CameraRigs.SpatialSimulator` для запуска симуляции и `CameraRigs.UnityXRPluginFramework` для запуска на подключенном к ПК VR-шлеме. 
+Нажмите на `Play`. В правом верхем углу окна `Game` появится интерфейс с кнопками `CameraRigs.SpatialSimulator` для запуска симуляции (клавиатура и мышь) и `CameraRigs.UnityXRPluginFramework` для запуска на подключенном к ПК VR-шлеме. 
 	
 > Если перед этим вы установили и настроили приложение `Oculus` для шлема `Oculus Quest 2` или `Steam VR` для шлема `HTC Vive`, то все запустится без проблем.
 	
-![Step Final](assets/images/_10_Play.png)
+![Screenshot_40](https://github.com/user-attachments/assets/5b1f8fad-2623-40e8-bc67-1e96d67a1c96)
+
 	
 [Installation]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity/blob/master/Documentation/HowToGuides/Installation/README.md
 [vrtk-v4-tilia-package-importer]: https://assetstore.unity.com/packages/tools/utilities/vrtk-v4-tilia-package-importer-214936
