@@ -13,3 +13,8 @@
 9. [Аварийный шкафчик](EmergencyLocker) :white_check_mark:
 10. [Шлюз](Gateway) :white_check_mark:
 11. [Рычаг](Lever) :white_check_mark:
+12. [Рычаг с недостающими предматами](LeverWithParts) :white_check_mark:
+13. [Триггерная зона](https://github.com/Picjavard/Unity_Tools/tree/main/ZoneTrigger) :white_check_mark:
+
+## Префабы учеников
+1.  [Minecraft](other/Minecraft) :white_check_mark:
