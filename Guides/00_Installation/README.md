@@ -71,7 +71,7 @@ VRPP содержит уже настроенный префаб игрока с
 ![Step 5](assets/images/_9_PImporter.png)
 ![Step 5](assets/images/_9_AddScoped.png)
 
-Поставьте флажки напротив всех пакетов, кроме:
+Поставьте флажки напротив всех пакетов, **КРОМЕ**:
 
 * `tilia.sdk.oculusintegration.unity`
 * `tilia.sdk.picointegration.unity`
