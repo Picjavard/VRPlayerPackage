@@ -12,15 +12,20 @@
 6. [Создание лифта (Linear Transform Drive)](/Guides/06_LinearTransformDrive_Lift/) :white_check_mark:
 7. [Создание слота (Snap Zone)](/Guides/07_SnapZone/) :white_check_mark:
 8. [Создание крафта инструмента (Interactablе, SnapZone, AnyTagRule)](/Guides/08_AnyTagRule_CraftTools/) :white_check_mark:
-9. [Создание механики добычи руды (Collision Tracker, Game Object Cloner, Any Component Type Rule)] :question:
+9. ~~[Создание механики добычи руды (Collision Tracker, Game Object Cloner, Any Component Type Rule)] :question: ~~ см. [CuttingDownTrees](Prefabs/CuttingDownTrees)
 10. [Создание верстака с рецептами (Snap Zone, Game Object Cloner)] :x:
-10. [Система чекпойнтов(точек сохранения игрока) (Teleportation)] :x:
+11. [Система чекпойнтов(точек сохранения игрока) (Teleportation)] :x:
 
 ## Префабы (Готовые объекты)
 
 Готовые объекты, которые можно добавить в VR проект и использовать и/или изучить как они работают
 
 [Список префабов](Prefabs)
+
+## Примеры проектов
+
+Видео VR-проектов учеников 2020-2026 в рамках урока технологии и проектной деятельности 6-х и 10-х классов, а так же доп.занятий по разработке VR-приложений (11-15 лет) - [Rutube](https://rutube.ru/video/private/623068388e9c5ba1abb47d46221545c1/?p=sSoKwsN6s0DBqOtAgrRH_w)
+Проект "VR-галерея" [Билд и пара скриншотов](https://disk.yandex.ru/d/rr3kTAz9EcAGHw)
 
 ## Поддержка
 
