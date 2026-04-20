@@ -28,6 +28,10 @@
 
 Проект "VR-галерея" [Билд и пара скриншотов](https://disk.yandex.ru/d/rr3kTAz9EcAGHw)
 
+## Материалы для разработки прототипов на Unity (без VR)
+
+[github.com/Picjavard/Unity_Tools/](https://github.com/Picjavard/Unity_Tools/)
+
 ## Поддержка
 
 [![Sbor.png](/img/Sbor.png)](https://yoomoney.ru/fundraise/SzaO6AEXfKY.230228)
