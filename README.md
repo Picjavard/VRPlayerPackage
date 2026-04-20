@@ -1,4 +1,4 @@
-# VR Player Package
+# VR Player Package (VRPP)
 
 [Инструкция по установке](/Guides/00_Installation/)
 
