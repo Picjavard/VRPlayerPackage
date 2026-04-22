@@ -17,7 +17,7 @@
 13. [Триггерная зона](https://github.com/Picjavard/Unity_Tools/tree/main/ZoneTrigger) :white\_check\_mark:
 14. [ИИ для NPC](AI) :white\_check\_mark:
 15. [Стрелочный дисплей](ArrowDisplay) :white\_check\_mark:
-
+16. [Спавнер объектов](https://github.com/Picjavard/Unity_Tools/tree/main/SpawnerObjects) :white\_check\_mark:
 
 
 ## Префабы учеников
