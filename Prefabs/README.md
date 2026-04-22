@@ -14,10 +14,10 @@
 10. [Шлюз](Gateway) :white\_check\_mark:
 11. [Рычаг](Lever) :white\_check\_mark:
 12. [Рычаг с недостающими предматами](LeverWithParts) :white\_check\_mark:
-13. [Триггерная зона](https://github.com/Picjavard/Unity_Tools/tree/main/ZoneTrigger) :white\_check\_mark:
+13. [Триггерная зона](https://github.com/Picjavard/Unity_Tools/tree/main/Zone_Trigger) :white\_check\_mark:
 14. [ИИ для NPC](AI) :white\_check\_mark:
 15. [Стрелочный дисплей](ArrowDisplay) :white\_check\_mark:
-16. [Спавнер объектов](https://github.com/Picjavard/Unity_Tools/tree/main/SpawnerObjects) :white\_check\_mark:
+16. [Спавнер объектов](https://github.com/Picjavard/Unity_Tools/tree/main/Spawner_Objects) :white\_check\_mark:
 
 
 ## Префабы учеников
