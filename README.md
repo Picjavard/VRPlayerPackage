@@ -12,7 +12,7 @@
 6. [Создание лифта (Linear Transform Drive)](/Guides/06_LinearTransformDrive_Lift/) :white_check_mark:
 7. [Создание слота (Snap Zone)](/Guides/07_SnapZone/) :white_check_mark:
 8. [Создание крафта инструмента (Interactablе, SnapZone, AnyTagRule)](/Guides/08_AnyTagRule_CraftTools/) :white_check_mark:
-9. ~~Создание механики добычи руды (Collision Tracker, Game Object Cloner, Any Component Type Rule)~~ см. [CuttingDownTrees](Prefabs/CuttingDownTrees)
+9. ~~Создание механики добычи руды (Collision Tracker, Game Object Cloner)~~ см. [CuttingDownTrees](Prefabs/CuttingDownTrees)
 10. [Создание верстака с рецептами (Snap Zone, Game Object Cloner)] :x:
 11. [Система чекпойнтов(точек сохранения игрока) (Teleportation)] :x:
 
